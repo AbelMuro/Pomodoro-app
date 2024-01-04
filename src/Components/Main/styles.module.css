@@ -1,0 +1,28 @@
+.main{
+    width: 410px;
+    height: 696px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_title{
+    color: #D7E0FF;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px 0px 55px 0px;
+}
+
+@media(max-width: 530px){
+    .main_title{
+        font-size: 1.5rem;
+        margin-bottom: 45px;
+    }
+}
