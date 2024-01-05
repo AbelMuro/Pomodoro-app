@@ -2,7 +2,7 @@
     border: none;
     margin: 0px;
     padding: 0px;
-    width: 140px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -34,6 +34,10 @@
     line-height: normal;
 }
 
+.selectMinutes input:focus{
+    outline: none;
+}
+
 
 .selectMinutes input::-webkit-outer-spin-button,
 .selectMinutes input::-webkit-inner-spin-button {
@@ -41,7 +45,7 @@
     margin: 0;
 }
 
-.selectMinutes input[type=number]{
+.selectMinutes input{
     -moz-appearance: textfield;
     appearance: textfield;
 }

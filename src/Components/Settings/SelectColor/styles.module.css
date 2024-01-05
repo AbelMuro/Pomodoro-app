@@ -1,0 +1,55 @@
+
+.selectColor {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectColor h2{
+    margin: 0px;
+    color: #161932;
+    font-family: var(--font);
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.colors{
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    justify-items: center;
+    column-gap: 16px;
+}
+
+.colors button {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+    border-radius: 100%;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.colors button:hover{
+    border: 1px solid #EFF1FA;
+}
+
+.colors button:nth-of-type(1){
+    background-color: #F87070;
+}
+
+.colors button:nth-of-type(2){
+    background-color: #70F3F8;
+}
+
+.colors button:nth-of-type(3){
+    background-color: #D881F8;
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 import SelectMinutes from './SelectMinutes';
+import SelectFont from './SelectFont';
+import SelectColor from './SelectColor';
 import styles from './styles.module.css';
 
 function Settings() {
@@ -16,7 +18,11 @@ function Settings() {
                     </section>
                     <hr/>
                     <form className={styles.dialog_form}>
-                        <SelectMinutes/>                        
+                        <SelectMinutes/>   
+                        <hr/>
+                        <SelectFont/>
+                        <hr/>
+                        <SelectColor/>
                     </form>
                 </dialog>
             </div>

@@ -1,6 +1,12 @@
-
+.select{
+    display: grid;
+    grid-template-columns: repeat(3, 140px);
+    row-gap: 22px;
+    column-gap: 20px;
+}
 
 .select_title{
+    grid-column: 1/4;
     color: #161932;
     font-family: var(--font);
     font-size: 0.8125rem;
@@ -9,7 +15,7 @@
     line-height: normal;
     letter-spacing: 5px;
     text-transform: uppercase;
-    margin: 0px 0px 24px 0px;
+    margin: 0px;
 }
 
 .select_minutes{

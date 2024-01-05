@@ -62,8 +62,22 @@
 .dialog_form{
     border: none;
     padding: 0px 38px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;    
 }
 
+.dialog_form > section{
+    margin-bottom: 5px;
+}
+
+
+.dialog_form hr{
+    margin: 0px;
+    border: none;
+    opacity: 0.1;
+    background-color: #161932;
+}
 
 .dialog_title{
     display: flex;

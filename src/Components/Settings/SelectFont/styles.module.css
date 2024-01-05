@@ -1,0 +1,60 @@
+.selectFont{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.selectFont label{
+    color: #161932;
+    font-family: var(--font);
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    align-self: center;
+}
+.fontButtons{
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    column-gap: 16px;
+    align-items: center;
+}
+
+.fontButtons button{
+    justify-self: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #1E213F;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #EFF1FA;
+    background-clip: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid transparent
+}
+
+.fontButtons button:hover{
+    border: 1px solid #EFF1FA;
+}
+
+.fontButtons button:nth-of-type(1){
+    font-family: 'kumbh sans';    
+}
+
+.fontButtons button:nth-of-type(2){
+    font-family: 'roboto slab';
+}
+
+.fontButtons button:nth-of-type(3){
+    font-family: 'space mono';
+}

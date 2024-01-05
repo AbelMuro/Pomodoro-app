@@ -1,0 +1,22 @@
+.color{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 5px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+    border-radius: 100%;
+    cursor: pointer;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color:hover{
+    border: 1px solid #EFF1FA;
+}
+
+.color > input {
+    display: none;
+}
