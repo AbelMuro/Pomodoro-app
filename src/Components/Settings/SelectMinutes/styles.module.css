@@ -1,0 +1,19 @@
+
+
+.select_title{
+    color: #161932;
+    font-family: var(--font);
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0px 0px 24px 0px;
+}
+
+.select_minutes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
