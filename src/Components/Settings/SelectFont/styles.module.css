@@ -1,6 +1,5 @@
 .selectFont{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
     justify-content: space-between;
     border: none;
     padding: 0px;
@@ -18,9 +17,11 @@
     text-transform: uppercase;
     align-self: center;
 }
+
 .fontButtons{
     display: grid;
     grid-template-columns: repeat(3, 40px);
+    grid-template-rows: 40px;
     column-gap: 16px;
     align-items: center;
 }
@@ -57,4 +58,17 @@
 
 .fontButtons button:nth-of-type(3){
     font-family: 'space mono';
+}
+
+@media(max-width: 600px) {
+    .selectFont{
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .selectFont label{
+        font-size: 0.6875rem;
+        letter-spacing: 4.231px;
+    }
 }

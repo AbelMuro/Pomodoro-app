@@ -6,10 +6,9 @@ import {useSelector} from 'react-redux';
 function SelectMinutes(){
     const {pomodoro, short, long} = useSelector(state => state.time);
 
-
     return(
-        <section className={styles.select}>
-            <h1 className={styles.select_title}>
+        <section className={styles.selectMinutes}>
+            <h1>
                 {`Time (Minutes)`}
             </h1>
             <InputMinutes label='pomodoro' initial={pomodoro}/>

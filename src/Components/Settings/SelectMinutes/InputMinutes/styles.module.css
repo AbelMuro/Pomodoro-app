@@ -1,4 +1,4 @@
-.selectMinutes{
+.container{
     border: none;
     margin: 0px;
     padding: 0px;
@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.selectMinutes label{
+.container label{
     color: #1E213F;
     font-family: var(--font);
     font-size: 0.75rem;
@@ -19,7 +19,7 @@
     opacity: 0.4
 }
 
-.selectMinutes input{
+.container input{
     width: 100%;
     height: 48px;
     padding-left: 16px;
@@ -34,18 +34,18 @@
     line-height: normal;
 }
 
-.selectMinutes input:focus{
+.container input:focus{
     outline: none;
 }
 
 
-.selectMinutes input::-webkit-outer-spin-button,
-.selectMinutes input::-webkit-inner-spin-button {
+.container input::-webkit-outer-spin-button,
+.container input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.selectMinutes input{
+.container input{
     -moz-appearance: textfield;
     appearance: textfield;
 }
@@ -81,4 +81,26 @@
 
 .arrowUp:hover, .arrowDown:hover{
     background-color: #1E213F;
+}
+
+
+@media(max-width: 600px){
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container input {
+        width: 140px;
+        height: 40px;
+    }
+
+    .arrowUp{
+        bottom: 24px;
+    }
+
+    .arrowDown{
+        bottom: 11px;
+    }
 }

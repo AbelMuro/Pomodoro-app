@@ -36,7 +36,7 @@ function SelectFont() {
                 <button type='button' data-font='roboto slab'>Aa</button>
                 <button type='button' data-font='space mono'>Aa</button>                
             </div>
-            <input type='hidden' value={font} onChange={() => {}}/>
+            <input type='hidden' name='font' value={font} onChange={() => {}}/>
         </fieldset>
     )
 }

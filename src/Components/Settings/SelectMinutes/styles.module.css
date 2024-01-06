@@ -1,11 +1,11 @@
-.select{
+.selectMinutes{
     display: grid;
     grid-template-columns: repeat(3, 140px);
     row-gap: 22px;
     column-gap: 20px;
 }
 
-.select_title{
+.selectMinutes h1{
     grid-column: 1/4;
     color: #161932;
     font-family: var(--font);
@@ -18,8 +18,24 @@
     margin: 0px;
 }
 
-.select_minutes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media(max-width: 700px){
+    .selectMinutes{
+        row-gap: 26px;
+    }
+}
+
+@media(max-width: 600px){
+    .selectMinutes{
+        grid-template-columns: 280px;
+        row-gap: 8px;
+    }
+
+    .selectMinutes h1{
+        font-size: 0.6875rem;
+        grid-column: 1/2;
+        margin-bottom: 10px;
+        justify-self: center;
+        letter-spacing: 4.231px;
+    }
+
 }

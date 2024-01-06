@@ -34,22 +34,24 @@
     z-index: var(--closest);
     top: 0px;
     left: 0px;
-    background-color: rgba(10, 12, 28, 0.50);
-    display: flex;
+    background-color: transparent;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
-.overlay_dialog{
+.dialog{
+    transform: scale(0);
     width: 540px;
     height: 464px;
     padding: 34px 0px 0px 0px;
     border: none;
     border-radius: 25px;
     background-color: #FFF;
+    position: relative;
 }
 
-.overlay_dialog hr{
+.dialog > hr{
     width: 100%;
     height: 1px;
     margin: 0px;
@@ -60,19 +62,57 @@
 
 
 .dialog_form{
-    border: none;
-    padding: 0px 38px 0px 40px;
     display: flex;
     flex-direction: column;
-    gap: 19px;    
+    gap: 19px;   
+    border: none;
+    padding: 0px 38px 0px 40px;
+}
+
+.dialog_submit{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    margin: auto;
+    width: 140px;
+    height: 53px;
+    padding: 0px;
+    border-radius: 26.5px;
+    background-color: #F87070;
+    border: none;
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.dialog_submit::after{
+    content: '';    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-color: white;
+    border-radius: 26.5px;
+    width: 140px;
+    height: 53px;
+}
+
+.dialog_submit:hover {
+    background-color: rgba(248, 112, 112, 0.8);
 }
 
 .dialog_form > section{
     margin-bottom: 5px;
 }
 
-
-.dialog_form hr{
+.dialog_form > hr{
+    width: 100%;
+    height: 1px;
     margin: 0px;
     border: none;
     opacity: 0.1;
@@ -117,4 +157,45 @@
 
 .dialog_close:hover{
     background-color: #1E213F;
+}
+
+@media(max-width: 700px){
+    .dialog_form{
+        gap: 24px;
+    }
+
+    .dialog_form > section{
+        margin-bottom: 0px;
+    }
+}
+
+@media(max-width: 600px){
+    .dialog{
+        width: 327px;
+        height: 549px;
+        border-radius: 15px;
+        padding-top: 24px;
+    }
+
+    .dialog_form{
+        padding: 0px 24px 0px 24px;
+    }
+
+    .dialog_title{
+        padding: 0px 24px 0px 24px;
+        margin-bottom: 28px;
+    }
+
+    .dialog_title h1{
+        font-size: 1.25rem;
+    }
+
+    .dialog > hr{
+        margin-bottom: 24px;
+    }
+
+    .dialog_submit{
+        bottom: -26px;
+    }
+
 }

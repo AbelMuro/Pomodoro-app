@@ -14,7 +14,7 @@ function SelectColor() {
             <h2>
                 Color
             </h2>
-            <div className={styles.colors} onClick={handleColor}>
+            <div className={styles.colors}>
                 <InputColor selected={color === '#F87070'} color='#F87070' handleColor={handleColor}/>    
                 <InputColor selected={color === '#70F3F8'} color='#70F3F8' handleColor={handleColor}/>   
                 <InputColor selected={color === '#D881F8'} color='#D881F8' handleColor={handleColor}/>           

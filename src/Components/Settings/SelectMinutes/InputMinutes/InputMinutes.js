@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useState, useRef} from 'react';
 import styles from './styles.module.css';
 
 function InputMinutes({label, initial}){
@@ -17,7 +17,7 @@ function InputMinutes({label, initial}){
 
     const decrement = () => {
         setMinutes(prev => {
-            if(prev - 1 < 0)
+            if(prev - 1 < 1)
                 return prev;
             else
                 return prev - 1;
@@ -25,11 +25,11 @@ function InputMinutes({label, initial}){
     }
 
     return(
-        <fieldset className={styles.selectMinutes}>
+        <fieldset className={styles.container}>
             <label>
                 {label}
             </label>
-            <input type='number' value={minutes} ref={inputRef} onChange={() => {}}/>
+            <input type='number' name={label} value={minutes} ref={inputRef} onChange={() => {}}/>
             <div className={styles.arrowUp} onClick={increment}></div>
             <div className={styles.arrowDown} onClick={decrement}></div>
         </fieldset>
