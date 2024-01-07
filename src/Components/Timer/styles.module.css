@@ -20,14 +20,46 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.timer_progressBar{
-    width: 339px;
-    height: 339px;
-    border-radius: 50%;
-    padding: 20px;
+.timer_time{
+    width: 230px;
+    height: 171px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
+
+.timer_time strong{
+    color: #D7E0FF;
+    font-family: var(--font);
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.timer_play{
+    padding: 0px;
+    color: #D7E0FF;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 15px;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
 
 @media(max-width: 700px){
     .timer{
@@ -38,5 +70,30 @@
 @media(max-width: 530px){
     .timer{
         margin-bottom: 79px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .timer_content{
+        width: 267px;
+        height: 267px;
+    }
+
+    .timer_time{
+        width: 187px;
+        height: 106px;
+        gap: 12.06px;
+    }
+
+    .timer_time strong{
+        color: #D7E0FF;
+        font-family: var(--font);
+        font-size: 5rem;
+        letter-spacing: -4px;
+    }
+
+    .timer_play{
+        font-size: 0.875rem;
+        letter-spacing: 13.125px;
     }
 }

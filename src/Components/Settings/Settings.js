@@ -3,10 +3,11 @@ import SelectMinutes from './SelectMinutes';
 import SelectFont from './SelectFont';
 import SelectColor from './SelectColor';
 import styles from './styles.module.css';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 
 function Settings() {
     const [open, setOpen] = useState(false);
+    const color = useSelector(state => state.theme)
     const overlayRef = useRef();
     const dialogRef = useRef();
     const dispatch = useDispatch();

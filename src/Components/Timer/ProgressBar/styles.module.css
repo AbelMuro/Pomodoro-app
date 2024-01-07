@@ -1,0 +1,27 @@
+.progressBar{
+    width: 339px;
+    height: 339px;
+    transform: rotate(-90deg);
+}
+
+.progressBar circle{
+    fill: none; 
+    stroke-width: 10px;        
+    r: 159;
+    cx: 50%; 
+    cy: 50%;
+    stroke-linecap: round;
+    stroke-dasharray: calc(2 * pi * 159);
+}
+
+@media(max-width: 530px){
+    .progressBar {
+        width: 248.049px;
+        height: 248.049px;
+    }
+
+    .progressBar circle{
+        r: 115.0245;
+        stroke-dasharray: calc(2 * pi * 115.0245);
+    }
+}
