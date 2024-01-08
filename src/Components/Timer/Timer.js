@@ -7,7 +7,6 @@ import {useSelector} from 'react-redux';
 
 function Timer() {
     const totalMinutes = useSelector(state => state.time.current.minutes);
-    console.log(totalMinutes);
     const color = useSelector(state => state.theme);
     const [minutes, setMinutes] = useState(totalMinutes);
     const [seconds, setSeconds] = useState(0);
