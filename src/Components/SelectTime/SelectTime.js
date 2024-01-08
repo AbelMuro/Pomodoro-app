@@ -14,8 +14,9 @@ function SelectTime() {
 
         const selected = e.target.getAttribute('data-id');
         setSelect(selected);
-        dispatch({type: `SELECT_${selected.toUpperCase()}`})
+        dispatch({type: `SELECT_${selected.toUpperCase()}`});
     }
+
 
     useEffect(() => {
         const buttons = allButtons.current.children;

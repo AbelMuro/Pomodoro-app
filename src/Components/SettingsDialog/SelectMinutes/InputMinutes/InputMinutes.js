@@ -1,8 +1,8 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import styles from './styles.module.css';
 
 function InputMinutes({label, initial}){
-    const [minutes, setMinutes] = useState(initial);
+    const [minutes, setMinutes] = useState(Number(initial));
     const inputRef = useRef();
 
 

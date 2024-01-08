@@ -32,16 +32,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-}
-
-.timer_time strong{
-    color: #D7E0FF;
-    font-family: var(--font);
-    font-size: 6.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    justify-content: center;
+    gap: 30px;
 }
 
 
@@ -51,7 +43,6 @@
     font-family: var(--font);
     font-size: 1rem;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     letter-spacing: 15px;
     background-color: transparent;
@@ -82,14 +73,7 @@
     .timer_time{
         width: 187px;
         height: 106px;
-        gap: 12.06px;
-    }
-
-    .timer_time strong{
-        color: #D7E0FF;
-        font-family: var(--font);
-        font-size: 5rem;
-        letter-spacing: -4px;
+        gap: 16.06px;
     }
 
     .timer_play{

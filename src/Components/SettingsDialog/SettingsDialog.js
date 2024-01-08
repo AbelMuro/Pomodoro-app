@@ -3,11 +3,10 @@ import SelectMinutes from './SelectMinutes';
 import SelectFont from './SelectFont';
 import SelectColor from './SelectColor';
 import styles from './styles.module.css';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch} from 'react-redux';
 
 function Settings() {
     const [open, setOpen] = useState(false);
-    const color = useSelector(state => state.theme)
     const overlayRef = useRef();
     const dialogRef = useRef();
     const dispatch = useDispatch();
@@ -35,8 +34,11 @@ function Settings() {
             type: 'UPDATE_THEME',
             theme: color
         })
-
-        document.querySelector(':root').style.setProperty('--font', font)
+        dispatch({
+            type: 'UPDATE_FONT',
+            font,
+        })
+        document.querySelector(':root').style.setProperty('--font', font);
     }
 
     useEffect(() => {

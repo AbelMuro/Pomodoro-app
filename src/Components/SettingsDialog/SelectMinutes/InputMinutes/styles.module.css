@@ -14,7 +14,6 @@
     font-family: var(--font);
     font-size: 0.75rem;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     opacity: 0.4
 }
@@ -30,7 +29,6 @@
     font-family: var(--font);
     font-size: 0.875rem;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
 }
 

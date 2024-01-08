@@ -11,7 +11,6 @@
     font-family: var(--font);
     font-size: 0.8125rem;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -34,7 +33,6 @@
     color: #1E213F;
     font-size: 0.9375rem;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     background-color: #EFF1FA;
     background-clip: content-box;

@@ -2,19 +2,22 @@ import React from 'react';
 import Main from './Components/Main';
 import SelectTime from './Components/SelectTime';
 import Timer from './Components/Timer';
-import Settings from './Components/Settings';
-import store from './Store';
+import SettingsDialog from './Components/SettingsDialog';
+import {store, persistedStore} from './Store';
 import { Provider } from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
 import './styles.css';
 
 function App() {
     return(
         <Provider store={store}>
-            <Main>
-                <SelectTime/>
-                <Timer/>
-                <Settings/>
-            </Main>
+            <PersistGate persistor={persistedStore}>
+                <Main>
+                    <SelectTime/>
+                    <Timer/>
+                    <SettingsDialog/>
+                </Main>                
+            </PersistGate>
         </Provider>
     )
 }

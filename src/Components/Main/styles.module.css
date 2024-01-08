@@ -1,12 +1,9 @@
 .main{
     width: 410px;
-    height: 696px;
-    position: absolute;
-    inset: 0;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 56px;
 }
 
 .main_title{
@@ -15,15 +12,22 @@
     font-family: var(--font);
     font-size: 2rem;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
+    font-weight: normal;
     margin: 0px 0px 55px 0px;
+}
+
+@media(max-width: 700px){
+    .main{
+        margin-top: 80px;
+    }
 }
 
 
 @media(max-width: 530px){
     .main{
         width: 327px;
+        margin-top: 0px;
     }
 
     .main_title{

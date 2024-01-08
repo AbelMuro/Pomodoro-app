@@ -1,0 +1,19 @@
+.time{
+    color: #D7E0FF;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 100px;
+}
+
+@media(max-width: 530px){
+    .time{
+        color: #D7E0FF;
+        font-family: var(--font);
+        font-size: 5rem;
+        line-height: 79px;
+    }
+}
+

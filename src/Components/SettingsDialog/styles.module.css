@@ -85,7 +85,6 @@
     font-family: var(--font);
     font-size: 1rem;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     cursor: pointer;
 }
@@ -133,8 +132,8 @@
     font-family: var(--font);
     font-size: 1.75rem;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
+    font-weight: normal;
 }
 
 .dialog_close{

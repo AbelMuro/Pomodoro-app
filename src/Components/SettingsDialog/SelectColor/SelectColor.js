@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import InputColor from './InputColor';
 import styles from './styles.module.css';
+import { useSelector } from 'react-redux';
 
 function SelectColor() {
-    const [color, setColor] = useState('#F87070');
+    const theme = useSelector(state => state.theme);    
+    const [color, setColor] = useState(theme);
 
     const handleColor = (e) => {
         setColor(e.target.value);
@@ -11,9 +13,9 @@ function SelectColor() {
 
     return(
         <fieldset className={styles.selectColor}>
-            <h2>
+            <label>
                 Color
-            </h2>
+            </label>
             <div className={styles.colors}>
                 <InputColor selected={color === '#F87070'} color='#F87070' handleColor={handleColor}/>    
                 <InputColor selected={color === '#70F3F8'} color='#70F3F8' handleColor={handleColor}/>   

@@ -7,13 +7,12 @@
     align-items: center;
 }
 
-.selectColor h2{
+.selectColor label{
     margin: 0px;
     color: #161932;
     font-family: var(--font);
     font-size: 0.8125rem;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     letter-spacing: 5px;
     text-transform: uppercase;

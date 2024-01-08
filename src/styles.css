@@ -1,17 +1,19 @@
 @font-face {
     font-family: 'kumbh sans';
-    src: url('./Assets/Fonts/KumbhSans-VariableFont.ttf');
+    src: url('./Assets/Fonts/KumbhSans-Bold.ttf');
 }
 
 @font-face {
     font-family: 'roboto slab' ;
-    src: url('./Assets/Fonts/RobotoSlab-VariableFont_wght.ttf');
+    src: url('./Assets/Fonts/RobotoSlab-Bold.ttf');
 }
 
 @font-face {
     font-family: 'space mono';
-    src: url('./Assets/Fonts/SpaceMono-Bold.ttf');
+    src: url('./Assets/Fonts/SpaceMono-Regular.ttf');
 }
+
+
 
 :root{
     --font: 'kumbh sans';
@@ -27,7 +29,10 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: #1E213F;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 * {
