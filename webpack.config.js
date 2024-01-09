@@ -13,7 +13,7 @@ module.exports = {
     plugins: [                      
         new HtmlWebpackPlugin({               //this plugin will help us generate the production html file in our /dist
             filename: 'index.html',           //our production html file will be named index.html
-            favicon: './public/favicon-32x32.png',   
+            favicon: './public/icons/favicon-32x32.png',   
             template: './src/index.html'      //this is a template for our production html file, we are defining how the html will look like before we make our production html file
         }),
         new CopyWebpackPlugin({

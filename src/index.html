@@ -6,10 +6,23 @@
         <meta name="author" content="Abel Muro"/>       
         <meta name="keywords" content="pomodoro, timer, stop-watch, watch, pwa"/>
         <meta name="description" content="App that will create a stop watch for any situation"/> 
-        <meta name="theme-color" content="#1E213F"/>                          
+        <meta name="theme-color" content="#1E213F"/>    
+        <link rel="manifest" href="/manifest.json"/>                      
         <title>Pomodoro</title>
     </head>
     <body>
         <div id="root"></div>
+        <script>
+            if ('serviceWorker' in navigator) {
+                    window.addEventListener('load', () => {
+                        navigator.serviceWorker.register(`/ServiceWorkers.js`).then((registration) => {
+                            console.log('Worker registration is successful', registration.scope);
+                        }, (err) => {
+                            console.log('Worker registration has failed', err);
+                        })
+                    });
+            } else 
+                    console.log('Service Worker is not supported by your browser.');
+        </script>
     </body>
 </html>
